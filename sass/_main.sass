@@ -1,0 +1,281 @@
+html, body
+    width: 100%
+    overflow-x: hidden
+
+h2
+    font-family: "Helvetica-Bold", Helvetica, sans-serif
+    font-size: 40px
+    font-weight: bold
+    color: #000
+    
+h3
+    @extend h2
+    font-size: 24px
+    
+%p 
+    font-family: Georgia
+    font-size: 16px
+    color: #000000
+    line-height: 24px
+        
+p     
+    @extend %p
+    
+a
+    color: #DD3E18
+    font-size: 16px
+    text-decoration: none 
+    
+.vcard
+    width: 100%
+    display: flex    
+    margin: 0 auto    
+    .vcard__photo
+        height: 672px
+        width: 38.3%
+        img
+            max-width: 100%
+            min-width: 100%
+            max-height: 100%
+            object-fit: cover
+    .vcard__info
+        max-height: 672px
+        background: #082841
+        display: flex
+        width: 61.7%
+        .vcard__info_container
+            position: relative
+            margin-top: 65px 
+            margin-left:  95px
+            h2
+                color: #fff
+            h3
+                color: #fff
+                margin-bottom: 11px 
+            .vcard__info_tablet-photo
+                display: none
+                width: 384px
+                height: 384px
+                min-width: 384px
+                min-height: 384px
+                border-radius: 50%
+                margin: 39px auto
+                img
+                    max-height: 100%
+                    min-width: 100%
+                    object-fit: cover
+                    object-position: 0px -85px
+                    border-radius: 192px
+            .vcard__info_description
+                position: absolute
+                bottom: 97px
+                width: 464px
+                p   
+                    @extend %p
+                    font-size: 20px
+                    color: #FFFFFF
+                    line-height: 28px
+                
+%__container
+    width: 944px
+    margin: 0 auto
+    padding-top: 106px 
+ 
+.wide
+    width: 558px
+    p
+        margin-right: 100px
+.narrow
+    width: 370px
+    p
+        margin-right: 40px 
+        
+
+
+
+.expectations
+    width: 100%   
+    margin-bottom: 23px 
+    .expectations__container 
+        @extend %__container 
+        .expectations__hscroller
+            display: none
+            width: 100%        
+            justify-content: center
+            span
+                display: block
+                width: 8px
+                height: 8px
+                border-radius: 50%
+                background: #DD3E18
+                margin: 24px 12px 0                        
+            & .active
+                background: #000
+        h2
+            margin-bottom: 50px 
+        .expectations__items
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: stretch
+            height: 448px
+            
+            
+            .expectations__item
+                height: 210px
+                background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%)
+                padding: 15px
+                box-sizing: border-box
+                position: relative
+                border-radius: 4px
+                h4
+                    @extend h3
+                    margin-bottom: 0 
+                p      
+                    font-size: 16px
+                    position: absolute
+                    bottom: 15px
+                
+        
+.portfolio
+    width: 100%   
+    .portfolio__container
+        @extend %__container
+        .portfolio__items
+            margin-top: 63px
+            .portfolio__item
+                display: flex
+                margin-bottom: 144px 
+                .portfolio__image
+                    display: block
+                    border-radius: 5px
+                    img
+                        box-shadow: 0 0 45px rgba(0,0,0,.37)
+                        min-height: 100% 
+                        max-height: 100% 
+                        min-width: 100%
+                        max-width: 100%
+                        object-fit: cover
+                        border-radius: 5px
+                .portfolio__hscroller
+                    display: none
+                    width: 100%        
+                    justify-content: center
+                    span
+                        display: block
+                        width: 8px
+                        height: 8px
+                        border-radius: 50%
+                        background: #DD3E18
+                        margin: 24px 12px 0                        
+                    & .active
+                        background: #000
+                .portfolio__vscroller
+                    width: 96px                   
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    span
+                        display: block
+                        width: 8px
+                        height: 8px
+                        border-radius: 50%
+                        background: #DD3E18
+                        margin: 8px 0                        
+                    & .active
+                        background: #000
+                & .vscr1
+                    span
+                        margin-left: 16px 
+                & .vscr2
+                    span
+                        margin-left: 72px 
+                .portfolio__iteminfo
+                    position: relative
+                    min-width: 304px
+                    p      
+                        @extend p
+                        position: absolute
+                        bottom: 0px
+                        opacity: .8
+                        font-size: 16px
+                    a
+                        @extend a
+                        margin-bottom: 8px
+                    h4
+                        @extend h3
+                        margin-bottom: 8px
+    
+.contacts
+    background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%)
+    .contacts__container 
+        @extend %__container
+        .contacts__box
+            margin-top: 61px
+            display: flex
+            .contacts__left
+                min-width: 304px
+                margin-right: 96px
+                .contacts__socials_container 
+                    width: 113px
+                p
+                    margin-bottom: 10px 
+                a
+                    font-size: 16px
+                    font-family: Georgia
+                    line-height: 32px
+                    position: relative
+                    span
+                        position: absolute
+                        left: 32px
+            .contacts__right
+                display: flex
+                flex-direction: column
+                position: relative
+                input
+                    width: 544px
+                    box-sizing: border-box
+                    background: #fff
+                    border: none
+                    outline: none
+                    border-radius: 4px
+                    vertical-align: top
+                    font-family: Georgia
+                    font-size: 16px
+                    line-height: 48px
+                    padding: 0 16px
+                    margin-bottom: 20px 
+                    &:focus
+                        border: 1px solid rgba(0, 0, 0, .1)
+                    &:placeholder-shown
+                        vertical-align: top
+                .contacts__message
+                    @extend input
+                    height: 192px
+                    resize: none
+                a
+                    display: inline-block
+                    font-family: "Helvetica"
+                    position: relative
+                    font-weight: bold
+                    span
+                        position: absolute
+                        bottom: 3px
+                        width: 122px
+                img
+                    margin-right: 11px 
+                button
+                    width: 544px
+                    height: 49px
+                    border: none
+                    outline: none
+                    border-radius: 4px
+                    background: #DD3E18
+                    color: #fff
+                    font-weight: bold
+                    font-size: 16px
+                    box-sizing: border-box
+                    padding: none
+                    margin-top: 23px
+                    margin-bottom: 40px 
+                    

@@ -1,0 +1,165 @@
+@media screen and (max-width: 1024px)
+    .vcard
+        width: 1024px
+        height: 768px
+        .vcard__photo
+            width: 41.4%
+            height: 768px
+            img
+                object-fit: cover
+        .vcard__info
+            width: 58.6%
+            height: 768px
+            min-height: 768px
+
+@media screen and (max-width: 768px)
+    .vcard
+        width: 100%
+        height: 1024px
+        .vcard__photo
+            display: none
+        
+        .vcard__info
+            width: 100%
+            display: flex
+            justify-content: center
+            min-height: 1024px
+            .vcard__info_container
+                width: 100%
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                position: relative
+                margin-top: 65px 
+                text-align: center 
+                margin-left: 0
+
+                .vcard__info_tablet-photo
+                    display: block
+                    
+                .vcard__info_description
+                    position: unset
+                    margin: 0 auto 145px
+                    width: 544px
+            
+    %__container
+        width: 91.9%
+        
+    .wide
+        width: 60%
+        
+    .narrow
+        width: 38%
+        
+    .portfolio__hscroller
+        display: flex
+        order: 3
+        
+    .portfolio
+        .portfolio__container 
+            .portfolio__items
+                .portfolio__item
+                    flex-direction: column
+                    margin-bottom: 70px
+                    .portfolio__hscroller
+                        display: flex
+                        order: 3
+                    .portfolio__vscroller
+                        display: none
+                    .portfolio__iteminfo
+                        width: 100%
+                        order: 1
+                        display: flex
+                        justify-content: space-between
+                        margin-bottom: 15px 
+                        p                            
+                            width: 384px
+                            position: unset
+                    .portfolio__image
+                        width: 100%
+                        order: 2
+                        img
+                            min-width: 100%
+    
+    .contacts
+        .contacts__container 
+            .contacts__box
+                flex-direction: column
+                .contacts__left
+                    width: 100%
+                    display: flex
+                    flex-direction: row
+                    margin-bottom: 19px 
+                    margin-right: 0px 
+                    .hideable   
+                        display: none
+                    p
+                        width: 384px
+                    .contacts__socials
+                        margin: 0 auto
+                .contacts__right
+                    input, textarea, button
+                        width: 100%
+                        
+@media screen and (max-width: 425px)
+    .vcard
+        height: 684px
+        .vcard__info
+            min-height: 684px
+            .vcard__info_container
+                margin-top: 33px
+                h2
+                    word-wrap: break-word
+                .vcard__info_description
+                    width: 90.8%
+                    p
+                        font-size: 16px
+                .vcard__info_tablet-photo                
+                    width: 144px
+                    height: 144px
+                    min-width: 144px
+                    min-height: 144px
+                    margin: 21px auto
+                    img
+                        object-position: 0px -15px
+        
+    .wide, .narrow
+        width: 100%
+        
+    .expectations        
+        .expectations__container
+            .expectations__hscroller
+                display: flex
+            .expectations__items
+                height: 304px
+                .expectations__item:not(.active)
+                    display: none
+                .expectations__item
+                    height: 100%
+                    
+    .portfolio
+        .portfolio__container 
+            padding-top: 83px
+            .portfolio__items
+                .portfolio__item                    
+                    .portfolio__iteminfo
+                        flex-direction: column
+                        p
+                            width: 100%
+                        .portfolio__item_header
+                            margin-bottom: 8px
+                            
+    .contacts
+        .contacts__container
+            .contacts__box
+                margin-top: 15px
+                .contacts__left
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    p
+                        width: 100%
+                        order: 2
+                    .contacts__socials
+                        margin: 0 auto 10px 0
+                        order: 1
