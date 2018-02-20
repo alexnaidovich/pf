@@ -268,10 +268,10 @@ a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfoli
   background: #000;
 }
 .portfolio .portfolio__container .portfolio__items .portfolio__item .vscr1 span {
-  margin-left: 16px;
+  margin: 8px 60px 8px 16px;
 }
 .portfolio .portfolio__container .portfolio__items .portfolio__item .vscr2 span {
-  margin-left: 72px;
+  margin: 8px 16px 8px 60px;
 }
 .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__iteminfo {
   position: relative;
