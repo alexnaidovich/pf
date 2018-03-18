@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 <!--    <link rel="stylesheet" href="css/media_test.css">-->
+    <script src="js/components/carousel.js"></script>
 </head>
 <body>
     <!-- begin wrapper -->
@@ -83,8 +84,13 @@
     				<h2>Мои работы</h2>
     				<div class="portfolio__items">
     				    <div class="portfolio__item">
-    				        <div class="portfolio__image"><a href="https://alexnaidovich.github.io/TMS-diploma-work/"><img src="img/pf001.png" alt=""></a></div>
-    				        <div class="portfolio__vscroller vscr1"><span class="active"></span>
+    				          <div class="portfolio__carousel-wrapper" id="carousel-p1">
+    				            <div class="portfolio__image js-carousel-item"><a href="https://alexnaidovich.github.io/TMS-diploma-work/"><img src="img/pf001.png" alt=""></a></div>
+    				            <div class="portfolio__image js-carousel-item"><a href="https://alexnaidovich.github.io/TMS-diploma-work/"><img src="img/pf001-1.png" alt=""></a></div>
+    				            <div class="portfolio__image js-carousel-item"><a href="https://alexnaidovich.github.io/TMS-diploma-work/"><img src="img/pf001-2.png" alt=""></a></div>
+    				            
+    				          </div>
+    				        <div class="portfolio__vscroller vscr1 js-scroller"><span class="active"></span>
     				        <span></span>
     				        <span></span></div>
     				        <div class="portfolio__iteminfo">
@@ -106,11 +112,16 @@
     				            </div>
     				            <p>Проба пера в написании собственной визитки. Написана во времена обучения в TeachMeSkills, поэтому "под капот" также лучше не заглядывать. Неактуальная, неинформативная, больше не поддерживается,... но респонсивная. На данный момент работаю над следующим вариантом, он будет намного круче.</p>
     				        </div>
-    				        <div class="portfolio__vscroller vscr2"><span class="active"></span>
+    				        <div class="portfolio__vscroller vscr2 js-scroller"><span class="active"></span>
     				        <span></span>
     				        <span></span>
     				        <span></span></div>
-    				        <div class="portfolio__image"><a href="https://alexnaidovich.github.io/"><img src="img/pf002.png" alt=""></a></div>
+    				        <div class="portfolio__carousel-wrapper" id="carousel-p2">
+    				          <div class="portfolio__image js-carousel-item"><a href="https://alexnaidovich.github.io/"><img src="img/pf002.png" alt=""></a></div>
+    				          <div class="portfolio__image js-carousel-item"><a href="https://alexnaidovich.github.io/"><img src="img/pf002-1.png" alt=""></a></div>
+    				          <div class="portfolio__image js-carousel-item"><a href="https://alexnaidovich.github.io/"><img src="img/pf002-2.png" alt=""></a></div>
+    				          <div class="portfolio__image js-carousel-item"><a href="https://alexnaidovich.github.io/"><img src="img/pf002-3.png" alt=""></a></div>
+    				        </div>
     				        <div class="portfolio__hscroller"><span class="active"></span>
     				        <span></span>
     				        <span></span>
@@ -205,6 +216,6 @@
     <!-- end wrapper -->
     
 <!--    HTML IS READY, NOW IT'S TIME FOR CSS!! (-: -->
-    
+    <script src="index.js"></script>
 </body>
 </html>
