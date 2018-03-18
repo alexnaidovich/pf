@@ -225,6 +225,7 @@ a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfoli
 .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__image {
   display: block;
   border-radius: 5px;
+  min-width: 60%;
 }
 .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__image img {
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.37);
