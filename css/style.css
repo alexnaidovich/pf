@@ -155,7 +155,7 @@ a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfoli
   width: 558px;
 }
 .wide p, .wide .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__iteminfo p, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__iteminfo .wide p {
-  margin-right: 100px;
+  margin-right: 40px;
 }
 
 .narrow {
@@ -489,7 +489,8 @@ a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfoli
   .contacts .contacts__container .contacts__box .contacts__left {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 19px;
     margin-right: 0px;
   }
@@ -500,7 +501,11 @@ a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfoli
     width: 384px;
   }
   .contacts .contacts__container .contacts__box .contacts__left .contacts__socials {
+    width: 100%;
     margin: 0 auto;
+  }
+  .contacts .contacts__container .contacts__box .contacts__left .contacts__socials ul {
+    display: inline-block;
   }
   .contacts .contacts__container .contacts__box .contacts__right input, .contacts .contacts__container .contacts__box .contacts__right .contacts__message, .contacts .contacts__container .contacts__box .contacts__right textarea, .contacts .contacts__container .contacts__box .contacts__right button {
     width: 100%;
@@ -545,9 +550,6 @@ a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfoli
   }
   .expectations .expectations__container .expectations__items {
     height: 304px;
-  }
-  .expectations .expectations__container .expectations__items .expectations__item:not(.active) {
-    display: none;
   }
   .expectations .expectations__container .expectations__items .expectations__item {
     height: 100%;
