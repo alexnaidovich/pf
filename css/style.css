@@ -243,8 +243,8 @@ a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfoli
 }
 .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__hscroller span {
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background: #DD3E18;
   margin: 24px 12px 0;
@@ -260,11 +260,12 @@ a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfoli
 }
 .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__vscroller span {
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #DD3E18;
   margin: 8px 0;
+  cursor: pointer;
 }
 .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__vscroller .active {
   background: #000;
@@ -450,12 +451,19 @@ a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfoli
     flex-direction: column;
     margin-bottom: 70px;
   }
+  .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__carousel-wrapper {
+    order: 2;
+  }
   .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__hscroller {
-    display: flex;
-    order: 3;
+    display: none;
   }
   .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__vscroller {
-    display: none;
+    flex-direction: row;
+    order: 3;
+    width: 100%;
+  }
+  .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__vscroller span {
+    margin: 24px 12px 0;
   }
   .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__iteminfo {
     width: 100%;
@@ -470,7 +478,6 @@ a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfoli
   }
   .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__image {
     width: 100%;
-    order: 2;
   }
   .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__image img {
     min-width: 100%;
