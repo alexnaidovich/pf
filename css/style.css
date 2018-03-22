@@ -532,6 +532,10 @@ a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfoli
   }
   .vcard .vcard__info .vcard__info_container .vcard__info_description p, .vcard .vcard__info .vcard__info_container .vcard__info_description .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__iteminfo p, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__iteminfo .vcard .vcard__info .vcard__info_container .vcard__info_description p {
     font-size: 16px;
+    line-height: 25px;
+  }
+  .vcard .vcard__info .vcard__info_container .vcard__info_description p a, .vcard .vcard__info .vcard__info_container .vcard__info_description p .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__iteminfo a, .vcard .vcard__info .vcard__info_container .vcard__info_description .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__iteminfo p a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__iteminfo .vcard .vcard__info .vcard__info_container .vcard__info_description p a {
+    font-size: 16px;
   }
   .vcard .vcard__info .vcard__info_container .vcard__info_tablet-photo {
     width: 144px;
