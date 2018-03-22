@@ -144,6 +144,9 @@ a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfoli
   color: #FFFFFF;
   line-height: 28px;
 }
+.vcard .vcard__info .vcard__info_container .vcard__info_description p a, .vcard .vcard__info .vcard__info_container .vcard__info_description p .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__iteminfo a, .vcard .vcard__info .vcard__info_container .vcard__info_description .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__iteminfo p a, .portfolio .portfolio__container .portfolio__items .portfolio__item .portfolio__iteminfo .vcard .vcard__info .vcard__info_container .vcard__info_description p a {
+  font-size: 20px;
+}
 
 .expectations .expectations__container, .portfolio .portfolio__container, .contacts .contacts__container {
   width: 944px;

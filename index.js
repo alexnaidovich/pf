@@ -11,6 +11,8 @@ pf3.navigate();
 
 let pf4 = new Carousel("carousel-p4");
 pf4.navigate();
+let pf5 = new Carousel("carousel-p5");
+pf5.navigate();
 
 if (w.offsetWidth < 425) {
   let exp = document.querySelectorAll('.expectations__items')[0];
