@@ -13,6 +13,12 @@ let pf4 = new Carousel("carousel-p4");
 pf4.navigate();
 let pf5 = new Carousel("carousel-p5");
 pf5.navigate();
+let pf6 = new Carousel("carousel-p6");
+pf6.navigate();
+let pf7 = new Carousel("carousel-p7");
+pf7.navigate();
+let pf8 = new Carousel("carousel-p8");
+pf8.navigate();
 
 if (w.offsetWidth < 425) {
   let exp = document.querySelectorAll('.expectations__items')[0];
